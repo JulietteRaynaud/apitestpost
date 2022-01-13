@@ -80,8 +80,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'apipost',
-        'USER': 'postgres',
-        'PASSWORD': 'juliette',
+        'USER': 'root',
+        'PASSWORD': '7cR=5/J&pmhxlEZ@s1X90',
+        'HOST': '51.159.9.124',
+        'PORT': '12804'
     }
 }
 
