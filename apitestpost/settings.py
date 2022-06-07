@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*rg__h*k+mouvyoosl@2jlf9e1yfy9@8*&xnz=_86#d2bjg&!#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'apitestpost.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'apipost',
-        'USER': 'root',
-        'PASSWORD': '7cR=5/J&pmhxlEZ@s1X90',
-        'HOST': '51.159.9.124',
-        'PORT': '12804'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'post',
+        'USER': 'mathys',
+        'PASSWORD': '@Mathys21',
+        'HOST': '51.159.11.187',
+        'PORT': '30902',
     }
 }
 
@@ -130,3 +130,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:4200',
+    'http://api.quentin-andreani.fr',
+]
